@@ -9,8 +9,15 @@ const addToDo = () => {
     //Clear input
     input.value = "";
 };
-(()=>{
-    const btn=documnet.getElementById('btn');
-}
+(() => {
+        const btn = documnet.getElementById('btn');
+    }
 
 )
+(() => {
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", (event) => {
+        console.log(event);
+        addTodo();
+    });
+})();
